@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="./login.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+	<div class="content">
+		<div class="text">THESIS.IO</div>
+		<form method="post" action="/advlogin">
+			<div class="field">
+				<span class="fas fa-user"></span>
+				<input type="text" id="Username" name="username" required>
+				<label>Username</label>
+			</div>
+			<div class="field">
+				<span class="fas fa-lock"></span>
+				<input type="password" id="password" name="password" required>
+				<label>Password</label>
+			</div>
+			<div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+			<button>Sign In</button>
+        </form>
+	</div>
+</body>
+</html>

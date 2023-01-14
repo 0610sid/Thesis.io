@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body
+{
+  background-image: url("chris-liu-zTfnJWrO6L8-unsplash.jpg");
+
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Poppins';
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+}
+
+
+.typing-text{
+  margin-top: 300px;
+  margin-left: 100px; 
+  
+  padding-bottom: -200000px;
+  
+  
+}
+
+.typing-text h1{
+  font-size: 40px;
+  font-weight: bold;
+  max-width: 400px;
+
+}
+
+.typing-text p{
+  font-size: 20px;
+  max-width: 600px;
+
+}
+
+
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+
+}
+ 
+header ul{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+header ul li{
+  position:relative;
+  list-style: none;
+}
+
+.navbuttons{
+  display: flex;
+  flex-direction: row;
+}
+
+#button1, #button2, #button3{
+  position:relative;
+  
+  
+  margin: 5px 15px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  color:white;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+
+
+
