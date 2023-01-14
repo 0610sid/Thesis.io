@@ -16,6 +16,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/last')
 
 app.use('/', require('./routes/login'))
 app.use('/',require('./routes/advlogin'))
+app.use('/',require('./routes/afterlogin'))
 
 app.get('/', (req,res)=>{
     res.render('homepage')

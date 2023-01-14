@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <link rel="stylesheet" href="./sdashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">THESIS.IO</a>
+    <ul>
+      <li><button id="homebutton">Home</button></li>
+      <li><button id="studentlogin">Student Login</button></li>
+      <li><button id="advisorlogin">Advisor Login</button></li>
+    </ul>
+  </header>
+  <div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><button>To Do List</button></li>
+            <li><button>Chat</button></li>
+            <li><button>Calendar</button></li>
+            <li><button>Feedback</button></li>
+            <li><button>Logout</button></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="side-div">
+        <p>Upload Your Thesis Here</p><br>
+        <div style="margin-left: 50%"> <button id="thesis" type="submit" onclick="handleClick()" style="margin-top: 50%; margin-bottom: -30%;"> Upload Files</button></div>
+    <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+    <script>
+        const button = document.getElementById('thesis')
+        const handleClick = () => {
+            const client = filestack.init('AiaCdlvIATXuxDM9r73g2z');
+            const options = {
+                onUploadDone: file => {
+                    console.log(file.filesUploaded[0].url)
+                },
+                accept: [".pdf"],
+            };
+            client.picker(options).open();
+        }
+    </script>   
+    
+    </div>
+
+    <br>
+    <div class="side-div">
+        <p>Enter the Link of Your Resources</p><br>
+        <div style="height: 200px; width: 500px; overflow-wrap: break-word;">
+        <input type="text" size="170" ></input>
+        <button>Submit</button>
+        <button>Get Review</button>
+    </div>
+    
+    </div>
+
+        
+
+</body>
+</html>

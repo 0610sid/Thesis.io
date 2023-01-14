@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  body
+  {
+    background-image: url("https://images.unsplash.com/photo-1465173121987-373740a169b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Poppins';
+  }
+  
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+  }
+  
+  
+  .typing-text{
+    margin-top: 300px;
+    margin-left: 100px; 
+    
+    padding-bottom: -200000px;
+    
+    
+  }
+  
+  .typing-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    max-width: 400px;
+  
+  }
+  
+  .typing-text p{
+    font-size: 20px;
+    max-width: 600px;
+  
+  }
+  
+  
+  header .logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  
+  }
+  
+  header ul{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  header ul li{
+    position:relative;
+    list-style: none;
+  }
+  
+  header ul li button{
+    position:relative;
+    margin: 15px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    color:black;
+    letter-spacing: 2px;
+    transition: 0.6s;
+  }
+
+  
+  .wrapper{
+    display: flex;
+    position: relative;
+  }
+  
+  .wrapper .sidebar{
+    width: 200px;
+    height: 100%;
+    background: transparent;
+    padding: 30px 0px;
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 60px;
+  }
+  
+  .wrapper .sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper .sidebar ul li{
+    padding: 30px;
+    list-style: none;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }    
+  
+  .wrapper .sidebar ul li button{
+    color: black;
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: larger;
+  }
+  
+  .wrapper .sidebar ul li a .fas{
+    width: 25px;
+  }
+  
+  .wrapper .sidebar ul li:hover{
+    background-color: #42C2FF;
+  }
+      
+  .wrapper .sidebar ul li:hover a{
+    color: #fff;
+  }
+   
+  .wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+  }
+  
+  .wrapper .main_content .info div{
+    margin-bottom: 20px;
+  }
+  
+  @media (max-height: 500px){
+    .social_media{
+      display: none !important;
+    }
+  }
+
+  .side-div{
+    border: solid 1px black;
+    padding-bottom: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+    margin-top: 100px;
+    margin-left: 270px; 
+    max-width: 80%;    
+  }
+
+  #thesis{
+    background-color: transparent;
+    font-size: larger;
+    border-radius: 8px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -100px;
+        
+  }
+
+
+  #thesis{
+    background-color: transparent;
+    font-size: larger;
+    border-radius: 8px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: -100px;
+        
+  }
+  
+  
+  
+  
+  
